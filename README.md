@@ -13,4 +13,4 @@ The base component of the model is state machine, which resides within the
 environment. The state machine can be implemented in various ways: as
 Markov state machine, as hierarchical composition of the Markov state machines,
 or as engine plugin.
- 
+ # Nordic
