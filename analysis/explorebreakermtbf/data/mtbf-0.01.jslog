@@ -1,0 +1,90 @@
+{"time":0,"message":"file = ../../models/nordic32d.json"}
+{"time":0,"message":"network = baseline"}
+{"time":0,"message":"seed = 1498436846188292173"}
+{"time":0,"message":"limits.Time = 10"}
+{"time":0,"message":"[loadflow] initialising"}
+{"time":0,"message":"[counters] initial load is 10940.000000"}
+{"time":0,"message":"[diversitystudy] set MTBF to 0.01"}
+{"time":0,"message":"[diversitystudy] attached to 120 breakers"}
+{"time":0,"message":"[diversitystudy] no breaker attacker"}
+{"time":0,"message":"[diversitystudy] no breaker inspector"}
+{"time":0,"message":"[protection] Added protection actions to 60 link(s)"}
+{"time":0,"message":"[attacker] network has no attackers"}
+{"time":0,"message":"[modificator] no modificators"}
+{"time":0,"message":"[CustomBreakerPlugin] no breakers was found"}
+{"time":9.99991903352867,"message":"[loadflow] completing"}
+{"time":9.99991903352867,"message":"[counters] Total load: 107175.890601"}
+{"time":9.99991903352867,"message":"time limit is reached"}
+{"time":9.99991903352867,"message":"472885 events in 1m33.965841607s"}
+{"time":0,"message":"file = ../../models/nordic32d.json"}
+{"time":0,"message":"network = baseline"}
+{"time":0,"message":"seed = 1498436940268032819"}
+{"time":0,"message":"limits.Time = 10"}
+{"time":0,"message":"[loadflow] initialising"}
+{"time":0,"message":"[counters] initial load is 10940.000000"}
+{"time":0,"message":"[diversitystudy] set MTBF to 0.01"}
+{"time":0,"message":"[diversitystudy] attached to 120 breakers"}
+{"time":0,"message":"[diversitystudy] no breaker attacker"}
+{"time":0,"message":"[diversitystudy] no breaker inspector"}
+{"time":0,"message":"[protection] Added protection actions to 60 link(s)"}
+{"time":0,"message":"[attacker] network has no attackers"}
+{"time":0,"message":"[modificator] no modificators"}
+{"time":0,"message":"[CustomBreakerPlugin] no breakers was found"}
+{"time":9.99997965695847,"message":"[loadflow] completing"}
+{"time":9.99997965695847,"message":"[counters] Total load: 107330.410353"}
+{"time":9.99997965695847,"message":"time limit is reached"}
+{"time":9.99997965695847,"message":"473942 events in 1m31.595017394s"}
+{"time":0,"message":"file = ../../models/nordic32d.json"}
+{"time":0,"message":"network = baseline"}
+{"time":0,"message":"seed = 1498437031990257646"}
+{"time":0,"message":"limits.Time = 10"}
+{"time":0,"message":"[loadflow] initialising"}
+{"time":0,"message":"[counters] initial load is 10940.000000"}
+{"time":0,"message":"[diversitystudy] set MTBF to 0.01"}
+{"time":0,"message":"[diversitystudy] attached to 120 breakers"}
+{"time":0,"message":"[diversitystudy] no breaker attacker"}
+{"time":0,"message":"[diversitystudy] no breaker inspector"}
+{"time":0,"message":"[protection] Added protection actions to 60 link(s)"}
+{"time":0,"message":"[attacker] network has no attackers"}
+{"time":0,"message":"[modificator] no modificators"}
+{"time":0,"message":"[CustomBreakerPlugin] no breakers was found"}
+{"time":9.999997716647298,"message":"[loadflow] completing"}
+{"time":9.999997716647298,"message":"[counters] Total load: 107188.430515"}
+{"time":9.999997716647298,"message":"time limit is reached"}
+{"time":9.999997716647298,"message":"471543 events in 1m33.023628138s"}
+{"time":0,"message":"file = ../../models/nordic32d.json"}
+{"time":0,"message":"network = baseline"}
+{"time":0,"message":"seed = 1498437125135593465"}
+{"time":0,"message":"limits.Time = 10"}
+{"time":0,"message":"[loadflow] initialising"}
+{"time":0,"message":"[counters] initial load is 10940.000000"}
+{"time":0,"message":"[diversitystudy] set MTBF to 0.01"}
+{"time":0,"message":"[diversitystudy] attached to 120 breakers"}
+{"time":0,"message":"[diversitystudy] no breaker attacker"}
+{"time":0,"message":"[diversitystudy] no breaker inspector"}
+{"time":0,"message":"[protection] Added protection actions to 60 link(s)"}
+{"time":0,"message":"[attacker] network has no attackers"}
+{"time":0,"message":"[modificator] no modificators"}
+{"time":0,"message":"[CustomBreakerPlugin] no breakers was found"}
+{"time":9.999967024614516,"message":"[loadflow] completing"}
+{"time":9.999967024614516,"message":"[counters] Total load: 107163.766223"}
+{"time":9.999967024614516,"message":"time limit is reached"}
+{"time":9.999967024614516,"message":"473419 events in 1m45.130892837s"}
+{"time":0,"message":"file = ../../models/nordic32d.json"}
+{"time":0,"message":"network = baseline"}
+{"time":0,"message":"seed = 1498437230393622784"}
+{"time":0,"message":"limits.Time = 10"}
+{"time":0,"message":"[loadflow] initialising"}
+{"time":0,"message":"[counters] initial load is 10940.000000"}
+{"time":0,"message":"[diversitystudy] set MTBF to 0.01"}
+{"time":0,"message":"[diversitystudy] attached to 120 breakers"}
+{"time":0,"message":"[diversitystudy] no breaker attacker"}
+{"time":0,"message":"[diversitystudy] no breaker inspector"}
+{"time":0,"message":"[protection] Added protection actions to 60 link(s)"}
+{"time":0,"message":"[attacker] network has no attackers"}
+{"time":0,"message":"[modificator] no modificators"}
+{"time":0,"message":"[CustomBreakerPlugin] no breakers was found"}
+{"time":9.999947179852603,"message":"[loadflow] completing"}
+{"time":9.999947179852603,"message":"[counters] Total load: 107264.564213"}
+{"time":9.999947179852603,"message":"time limit is reached"}
+{"time":9.999947179852603,"message":"474095 events in 1m36.590056972s"}

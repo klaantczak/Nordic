@@ -1,0 +1,3088 @@
+{
+  "name": "Substations",
+  "comment": "Substations with link flow maximum set to 120% of normal load",
+  "machines": [
+    {
+      "name": "4071",
+      "machine": "Substation 4071"
+    },
+    {
+      "name": "4011",
+      "machine": "Substation 4011"
+    },
+    {
+      "name": "1011",
+      "machine": "Substation 1011"
+    },
+    {
+      "name": "1013",
+      "machine": "Substation 1013"
+    },
+    {
+      "name": "4012",
+      "machine": "Substation 4012"
+    },
+    {
+      "name": "1012",
+      "machine": "Substation 1012"
+    },
+    {
+      "name": "1014",
+      "machine": "Substation 1014"
+    },
+    {
+      "name": "4072",
+      "machine": "Substation 4072"
+    },
+    {
+      "name": "4021",
+      "machine": "Substation 4021"
+    },
+    {
+      "name": "1021",
+      "machine": "Substation 1021"
+    },
+    {
+      "name": "1022",
+      "machine": "Substation 1022"
+    },
+    {
+      "name": "4022",
+      "machine": "Substation 4022"
+    },
+    {
+      "name": "2032",
+      "machine": "Substation 2032"
+    },
+    {
+      "name": "2031",
+      "machine": "Substation 2031"
+    },
+    {
+      "name": "4031",
+      "machine": "Substation 4031"
+    },
+    {
+      "name": "4032",
+      "machine": "Substation 4032"
+    },
+    {
+      "name": "4042",
+      "machine": "Substation 4042"
+    },
+    {
+      "name": "4041",
+      "machine": "Substation 4041"
+    },
+    {
+      "name": "4044",
+      "machine": "Substation 4044"
+    },
+    {
+      "name": "4043",
+      "machine": "Substation 4043"
+    },
+    {
+      "name": "4046",
+      "machine": "Substation 4046"
+    },
+    {
+      "name": "4061",
+      "machine": "Substation 4061"
+    },
+    {
+      "name": "1043",
+      "machine": "Substation 1043"
+    },
+    {
+      "name": "1044",
+      "machine": "Substation 1044"
+    },
+    {
+      "name": "1042",
+      "machine": "Substation 1042"
+    },
+    {
+      "name": "1041",
+      "machine": "Substation 1041"
+    },
+    {
+      "name": "1045",
+      "machine": "Substation 1045"
+    },
+    {
+      "name": "4062",
+      "machine": "Substation 4062"
+    },
+    {
+      "name": "4045",
+      "machine": "Substation 4045"
+    },
+    {
+      "name": "4047",
+      "machine": "Substation 4047"
+    },
+    {
+      "name": "4063",
+      "machine": "Substation 4063"
+    },
+    {
+      "name": "4051",
+      "machine": "Substation 4051"
+    },
+    {
+      "name": "4071-4011",
+      "machine": "Link",
+      "properties": {
+        "from": "4071",
+        "to": "4011",
+        "kV": "400",
+        "x": 8,
+        "max": 1222.3642053398114,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.93
+        },
+        "length": 380,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.002190639269406393,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4071-4012",
+      "machine": "Link",
+      "properties": {
+        "from": "4071",
+        "to": "4012",
+        "kV": "400",
+        "x": 8,
+        "max": 1089.8570257039264,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 2.142
+        },
+        "length": 420,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0024212328767123288,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4071-4072-1",
+      "machine": "Link",
+      "properties": {
+        "from": "4071",
+        "to": "4072",
+        "kV": "400",
+        "x": 4.8,
+        "max": 1070.472792149866,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.53
+        },
+        "length": 300,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0017294520547945205,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4071-4072-2",
+      "machine": "Link",
+      "properties": {
+        "from": "4071",
+        "to": "4072",
+        "kV": "400",
+        "x": 4.8,
+        "max": 1070.472792149866,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.53
+        },
+        "length": 300,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0017294520547945205,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4011-1011",
+      "machine": "Link",
+      "comment": "Transformer",
+      "properties": {
+        "from": "4011",
+        "to": "1011",
+        "kV": "400",
+        "x": 1,
+        "max": 549.4159873826829,
+        "overloaded": false,
+        "connected": true,
+        "length": -1,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.0147
+        },
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0002673858285,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4011-4021",
+      "machine": "Link",
+      "properties": {
+        "from": "4011",
+        "to": "4021",
+        "kV": "400",
+        "x": 9.6,
+        "max": 1837.4775747250824,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 2.728
+        },
+        "length": 535,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.003084474885844749,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4011-4022",
+      "machine": "Link",
+      "properties": {
+        "from": "4011",
+        "to": "4022",
+        "kV": "400",
+        "x": 6.4,
+        "max": 1453.2167498967115,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.63
+        },
+        "length": 320,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0018447488584474887,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4011-4012",
+      "machine": "Link",
+      "properties": {
+        "from": "4011",
+        "to": "4012",
+        "kV": "400",
+        "x": 1.6,
+        "max": 662.5358981794252,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.51
+        },
+        "length": 100,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0005764840182648402,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1011-1013-1",
+      "machine": "Link",
+      "properties": {
+        "from": "1011",
+        "to": "1013",
+        "kV": "220",
+        "x": 1.69,
+        "max": 474.70799369133147,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.9073
+        },
+        "length": 43,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00008333333333333333,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1011-1013-2",
+      "machine": "Link",
+      "properties": {
+        "from": "1011",
+        "to": "1013",
+        "kV": "220",
+        "x": 1.69,
+        "max": 474.70799369133147,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.9073
+        },
+        "length": 43,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00008333333333333333,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1013-1014-1",
+      "machine": "Link",
+      "properties": {
+        "from": "1013",
+        "to": "1014",
+        "kV": "?",
+        "x": 1.18,
+        "max": 260.61343526136716,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.6541
+        },
+        "length": 31,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.000060502283105022834,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1013-1014-2",
+      "machine": "Link",
+      "properties": {
+        "from": "1013",
+        "to": "1014",
+        "kV": "?",
+        "x": 1.18,
+        "max": 260.61343526136716,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.6541
+        },
+        "length": 31,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.000060502283105022834,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4012-1012",
+      "machine": "Link",
+      "comment": "Transformer",
+      "properties": {
+        "from": "4012",
+        "to": "1012",
+        "kV": "400",
+        "x": 1,
+        "max": 506.42700994114057,
+        "overloaded": false,
+        "connected": true,
+        "length": -1,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.0147
+        },
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0002673858285,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4012-4022",
+      "machine": "Link",
+      "properties": {
+        "from": "4012",
+        "to": "4022",
+        "kV": "400",
+        "x": 6.4,
+        "max": 1618.8507244415678,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.453
+        },
+        "length": 285,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0016426940639269407,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1012-1014-1",
+      "machine": "Link",
+      "properties": {
+        "from": "1012",
+        "to": "1014",
+        "kV": "220",
+        "x": 2.37,
+        "max": 39.11894654060188,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.1816
+        },
+        "length": 56,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00010844748858447488,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1012-1014-2",
+      "machine": "Link",
+      "properties": {
+        "from": "1012",
+        "to": "1014",
+        "kV": "220",
+        "x": 2.37,
+        "max": 39.11894654060188,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.1816
+        },
+        "length": 56,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00010844748858447488,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4021-4042",
+      "machine": "Link",
+      "properties": {
+        "from": "4021",
+        "to": "4042",
+        "kV": "400",
+        "x": 16,
+        "max": 1208.3447334388832,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 5.1
+        },
+        "length": 1000,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0057659817351598175,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4021-4032",
+      "machine": "Link",
+      "properties": {
+        "from": "4021",
+        "to": "4032",
+        "kV": "400",
+        "x": 6.4,
+        "max": 886.0463114021695,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.93
+        },
+        "length": 380,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.002190639269406393,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1021-1022-1",
+      "machine": "Link",
+      "properties": {
+        "from": "1021",
+        "to": "1022",
+        "kV": "220",
+        "x": 5.07,
+        "max": 256.91347011596827,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.9834
+        },
+        "length": 94,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00018264840182648402,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1021-1022-2",
+      "machine": "Link",
+      "properties": {
+        "from": "1021",
+        "to": "1022",
+        "kV": "220",
+        "x": 5.07,
+        "max": 256.91347011596827,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.9834
+        },
+        "length": 94,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00018264840182648402,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1022-4022",
+      "machine": "Link",
+      "comment": "Transformer",
+      "properties": {
+        "from": "1022",
+        "to": "4022",
+        "kV": "?",
+        "x": 1,
+        "max": 453.8269402319347,
+        "overloaded": false,
+        "connected": true,
+        "length": -1,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.0147
+        },
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0002673858285,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4022-4031-1",
+      "machine": "Link",
+      "properties": {
+        "from": "4022",
+        "to": "4031",
+        "kV": "400",
+        "x": 6.4,
+        "max": 1762.9472072851036,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.88
+        },
+        "length": 370,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0021335616438356167,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4022-4031-2",
+      "machine": "Link",
+      "properties": {
+        "from": "4022",
+        "to": "4031",
+        "kV": "400",
+        "x": 6.4,
+        "max": 1762.9472072851036,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.88
+        },
+        "length": 370,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0021335616438356167,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "2032-2031-1",
+      "machine": "Link",
+      "properties": {
+        "from": "2032",
+        "to": "2031",
+        "kV": "130",
+        "x": 5.81,
+        "max": 278.32292595896524,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.4914
+        },
+        "length": 54,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00010502283105022832,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "2032-2031-2",
+      "machine": "Link",
+      "properties": {
+        "from": "2032",
+        "to": "2031",
+        "kV": "130",
+        "x": 5.81,
+        "max": 278.32292595896524,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.4914
+        },
+        "length": 54,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00010502283105022832,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "2031-4031",
+      "machine": "Link",
+      "comment": "Transformer",
+      "properties": {
+        "from": "2031",
+        "to": "4031",
+        "kV": "?",
+        "x": 1,
+        "max": 356.64585191792867,
+        "overloaded": false,
+        "connected": true,
+        "length": -1,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.0147
+        },
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0002673858285,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4031-4041-1",
+      "machine": "Link",
+      "properties": {
+        "from": "4031",
+        "to": "4041",
+        "kV": "400",
+        "x": 9.6,
+        "max": 1238.9388915291042,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 3.92
+        },
+        "length": 770,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.004439497716894977,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4031-4041-2",
+      "machine": "Link",
+      "properties": {
+        "from": "4031",
+        "to": "4041",
+        "kV": "400",
+        "x": 9.6,
+        "max": 1238.9388915291042,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 3.92
+        },
+        "length": 770,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.004439497716894977,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4031-4032",
+      "machine": "Link",
+      "properties": {
+        "from": "4031",
+        "to": "4032",
+        "kV": "400",
+        "x": 1.6,
+        "max": 1704.3948652319123,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.408
+        },
+        "length": 93.7,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00046118721461187217,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4032-4042",
+      "machine": "Link",
+      "properties": {
+        "from": "4032",
+        "to": "4042",
+        "kV": "?",
+        "x": 16,
+        "max": 853.9262088780156,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 2.95
+        },
+        "length": 580,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.003343607305936073,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4032-4044",
+      "machine": "Link",
+      "properties": {
+        "from": "4032",
+        "to": "4044",
+        "kV": "400",
+        "x": 9.6,
+        "max": 1736.514967756059,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 4.13
+        },
+        "length": 810,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.004670091324200913,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4042-4044",
+      "machine": "Link",
+      "properties": {
+        "from": "4042",
+        "to": "4044",
+        "kV": "400",
+        "x": 3.2,
+        "max": 939.9138588780988,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.96
+        },
+        "length": 190,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.001095890410958904,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4042-4043",
+      "machine": "Link",
+      "properties": {
+        "from": "4042",
+        "to": "4043",
+        "kV": "400",
+        "x": 3.2,
+        "max": 1379.2705535547684,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.71
+        },
+        "length": 140,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0008070776255707763,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4041-4044",
+      "machine": "Link",
+      "properties": {
+        "from": "4041",
+        "to": "4044",
+        "kV": "400",
+        "x": 4.8,
+        "max": 1563.2837741978801,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.326
+        },
+        "length": 260,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0014988584474885846,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4041-4061",
+      "machine": "Link",
+      "properties": {
+        "from": "4041",
+        "to": "4061",
+        "kV": "400",
+        "x": 9.6,
+        "max": 434.59400886032927,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 2.0145
+        },
+        "length": 395,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0022773972602739725,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4044-1044-1",
+      "machine": "Link",
+      "comment": "Transformer",
+      "properties": {
+        "from": "4044",
+        "to": "1044",
+        "kV": "400",
+        "x": 1,
+        "max": 1250.8844756403996,
+        "overloaded": false,
+        "connected": true,
+        "length": -1,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.0147
+        },
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0002673858285,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4044-1044-2",
+      "machine": "Link",
+      "comment": "Transformer",
+      "properties": {
+        "from": "4044",
+        "to": "1044",
+        "kV": "400",
+        "x": 1,
+        "max": 1250.8844756403996,
+        "overloaded": false,
+        "connected": true,
+        "length": -1,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.0147
+        },
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0002673858285,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4044-4045-1",
+      "machine": "Link",
+      "properties": {
+        "from": "4044",
+        "to": "4045",
+        "kV": "400",
+        "x": 3.2,
+        "max": 429.61513009893497,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.867
+        },
+        "length": 170,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.000980593607305936,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4044-4045-2",
+      "machine": "Link",
+      "properties": {
+        "from": "4044",
+        "to": "4045",
+        "kV": "400",
+        "x": 3.2,
+        "max": 429.61513009893497,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.867
+        },
+        "length": 170,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.000980593607305936,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4044-4043",
+      "machine": "Link",
+      "properties": {
+        "from": "4044",
+        "to": "4043",
+        "kV": "400",
+        "x": 1.6,
+        "max": 878.7133893533392,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.357
+        },
+        "length": 70,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0004041095890410959,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4043-4047",
+      "machine": "Link",
+      "properties": {
+        "from": "4043",
+        "to": "4047",
+        "kV": "?",
+        "x": 3.2,
+        "max": 121.00802854593894,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.663
+        },
+        "length": 130,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00075,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4043-4046",
+      "machine": "Link",
+      "properties": {
+        "from": "4043",
+        "to": "4046",
+        "kV": "400",
+        "x": 1.6,
+        "max": 578.9919714540447,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.306
+        },
+        "length": 60,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00034589041095890407,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4046-4047",
+      "machine": "Link",
+      "properties": {
+        "from": "4046",
+        "to": "4047",
+        "kV": "?",
+        "x": 1.6,
+        "max": 821.0080285459226,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.51
+        },
+        "length": 100,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0005764840182648402,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4061-4062",
+      "machine": "Link",
+      "properties": {
+        "from": "4061",
+        "to": "4062",
+        "kV": "400",
+        "x": 1,
+        "max": 565.4059911396107,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.663
+        },
+        "length": 130,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00075,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1043-1041-1",
+      "machine": "Link",
+      "properties": {
+        "from": "1043",
+        "to": "1041",
+        "kV": "220",
+        "x": 1.69,
+        "max": 410.74121038068915,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.8018
+        },
+        "length": 38,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00007420091324200913,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1043-1041-2",
+      "machine": "Link",
+      "properties": {
+        "from": "1043",
+        "to": "1041",
+        "kV": "220",
+        "x": 1.69,
+        "max": 410.74121038068915,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.8018
+        },
+        "length": 38,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00007420091324200913,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1043-1044-1",
+      "machine": "Link",
+      "properties": {
+        "from": "1043",
+        "to": "1044",
+        "kV": "220",
+        "x": 1.69,
+        "max": 440.7412103806673,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.0339
+        },
+        "length": 49,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00009474885844748859,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1043-1044-2",
+      "machine": "Link",
+      "properties": {
+        "from": "1043",
+        "to": "1044",
+        "kV": "220",
+        "x": 1.69,
+        "max": 440.7412103806673,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.0339
+        },
+        "length": 49,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.00009474885844748859,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1044-1042-1",
+      "machine": "Link",
+      "properties": {
+        "from": "1044",
+        "to": "1042",
+        "kV": "220",
+        "x": 6.42,
+        "max": 10.14326525971046,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 3.9457
+        },
+        "length": 187,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.000363013698630137,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1044-1042-2",
+      "machine": "Link",
+      "properties": {
+        "from": "1044",
+        "to": "1042",
+        "kV": "220",
+        "x": 6.42,
+        "max": 10.14326525971046,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 3.9457
+        },
+        "length": 187,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.000363013698630137,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1042-1045",
+      "machine": "Link",
+      "properties": {
+        "from": "1042",
+        "to": "1045",
+        "kV": "220",
+        "x": 8.45,
+        "max": 105.9243538914161,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 3.9457
+        },
+        "length": 187,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.000363013698630137,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1041-1045-1",
+      "machine": "Link",
+      "properties": {
+        "from": "1041",
+        "to": "1045",
+        "kV": "220",
+        "x": 2.53,
+        "max": 189.25878961932176,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.6247
+        },
+        "length": 77,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0001495433789954338,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1041-1045-2",
+      "machine": "Link",
+      "properties": {
+        "from": "1041",
+        "to": "1045",
+        "kV": "220",
+        "x": 2.53,
+        "max": 189.25878961932176,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.6247
+        },
+        "length": 77,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0001495433789954338,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1045-4045-1",
+      "machine": "Link",
+      "comment": "Transformer",
+      "properties": {
+        "from": "1045",
+        "to": "4045",
+        "kV": "?",
+        "x": 1,
+        "max": 836.296612673621,
+        "overloaded": false,
+        "connected": true,
+        "length": -1,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.0147
+        },
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0002673858285,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "1045-4045-2",
+      "machine": "Link",
+      "comment": "Transformer",
+      "properties": {
+        "from": "1045",
+        "to": "4045",
+        "kV": "?",
+        "x": 1,
+        "max": 836.296612673621,
+        "overloaded": false,
+        "connected": true,
+        "length": -1,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.0147
+        },
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0002673858285,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4062-4063-1",
+      "machine": "Link",
+      "properties": {
+        "from": "4062",
+        "to": "4063",
+        "kV": "?",
+        "x": 4.8,
+        "max": 261.1953612845664,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.173
+        },
+        "length": 230,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0013264840182648401,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4062-4063-2",
+      "machine": "Link",
+      "properties": {
+        "from": "4062",
+        "to": "4063",
+        "kV": "400",
+        "x": 4.8,
+        "max": 261.1953612845664,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.173
+        },
+        "length": 269,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0013264840182648401,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4062-4045",
+      "machine": "Link",
+      "properties": {
+        "from": "4062",
+        "to": "4045",
+        "kV": "?",
+        "x": 17.6,
+        "max": 299.5360249174355,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 3.876
+        },
+        "length": 760,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.004382420091324201,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4045-4051-1",
+      "machine": "Link",
+      "properties": {
+        "from": "4045",
+        "to": "4051",
+        "kV": "400",
+        "x": 6.4,
+        "max": 256.91347011596827,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.428
+        },
+        "length": 280,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0016141552511415526,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "4045-4051-2",
+      "machine": "Link",
+      "properties": {
+        "from": "4045",
+        "to": "4051",
+        "kV": "400",
+        "x": 6.4,
+        "max": 256.91347011596827,
+        "overloaded": false,
+        "connected": true,
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 1.428
+        },
+        "length": 280,
+        "recovery": {
+          "type": "deterministic",
+          "parameter": 0.0016141552511415526,
+          "comment": "=original/(365*24)"
+        }
+      }
+    },
+    {
+      "name": "N01",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N02",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N03",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N04",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N05",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N06",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N07",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N08",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N09",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N10",
+      "machine": "Control Centre"
+    },
+    {
+      "name": "N11",
+      "machine": "Control Centre"
+    },
+    {
+      "name": "N12",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N13",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N14",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N15",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N16",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N17",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N18",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N19",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N20",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N21",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N22",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "N10-4071",
+      "machine": "Data Link",
+      "comment": "This substation is connected directly to the control centre because it is not at the diagram.",
+      "properties": {
+        "from": "N10",
+        "to": "4071",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N10-4072",
+      "machine": "Data Link",
+      "comment": "This substation is connected directly to the control centre because it is not at the diagram.",
+      "properties": {
+        "from": "N10",
+        "to": "4072",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N01-4011",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N01",
+        "to": "4011",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N01-N04",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N01",
+        "to": "N04",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N01-N05",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N01",
+        "to": "N05",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N02-1011",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N02",
+        "to": "1011",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N02-N05",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N02",
+        "to": "N05",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N02-N06",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N02",
+        "to": "N06",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N03-1013",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N03",
+        "to": "1013",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N03-N06",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N03",
+        "to": "N06",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N03-N07",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N03",
+        "to": "N07",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N04-4032",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N04",
+        "to": "4032",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N04-N05",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N04",
+        "to": "N05",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N05-N08",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N05",
+        "to": "N08",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N05-N09",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N05",
+        "to": "N09",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N06-N10",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N06",
+        "to": "N10",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N06-N11",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N06",
+        "to": "N11",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N07-4012",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N07",
+        "to": "4012",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N07-N12",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N07",
+        "to": "N12",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N07-N13",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N07",
+        "to": "N13",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N08-4031",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N08",
+        "to": "4031",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N08-N09",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N08",
+        "to": "N09",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N09-N14",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N09",
+        "to": "N14",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N09-N10",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N09",
+        "to": "N10",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N10-N15",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N10",
+        "to": "N15",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N10-N11",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N10",
+        "to": "N11",
+        "failure": {
+          "type": "idle"
+        }
+      }
+    },
+    {
+      "name": "N11-N15",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N11",
+        "to": "N15",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N11-N16",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N11",
+        "to": "N16",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N11-N12",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N11",
+        "to": "N12",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N12-N13",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N12",
+        "to": "N13",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N12-N17",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N12",
+        "to": "N17",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N13-1012",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N13",
+        "to": "1012",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N14-2031",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N14",
+        "to": "2031",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N14-N18",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N14",
+        "to": "N18",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N15-N18",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N15",
+        "to": "N18",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N15-N19",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N15",
+        "to": "N19",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N15-N20",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N15",
+        "to": "N20",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N16-N21",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N16",
+        "to": "N21",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N16-N22",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N16",
+        "to": "N22",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N16-N17",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N16",
+        "to": "N17",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N17-1014",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N17",
+        "to": "1014",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N17-N22",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N17",
+        "to": "N22",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N18-2032",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N18",
+        "to": "2032",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N19-4021",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N19",
+        "to": "4021",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N19-N20",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N19",
+        "to": "N20",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N20-4022",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N20",
+        "to": "4022",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N20-N21",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N20",
+        "to": "N21",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N21-1022",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N21",
+        "to": "1022",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "N22-1021",
+      "machine": "Data Link",
+      "properties": {
+        "from": "N22",
+        "to": "1021",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C01",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C02",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C03",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C04",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C05",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C06",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C07",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C08",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C09",
+      "machine": "Control Centre"
+    },
+    {
+      "name": "C10",
+      "machine": "Control Centre"
+    },
+    {
+      "name": "C11",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C12",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C13",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C14",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C15",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C16",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C17",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C18",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C19",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C20",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C21",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "C01-4041",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C01",
+        "to": "4041",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C01-C05",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C01",
+        "to": "C05",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C01-C04",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C01",
+        "to": "C04",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C02-4042",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C02",
+        "to": "4042",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C02-C06",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C02",
+        "to": "C06",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C02-C05",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C02",
+        "to": "C05",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C03-4043",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C03",
+        "to": "4043",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C03-C07",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C03",
+        "to": "C07",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C03-C06",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C03",
+        "to": "C06",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C04-4051",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C04",
+        "to": "4051",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C04-C05",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C04",
+        "to": "C05",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C05-C08",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C05",
+        "to": "C08",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C06-C09",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C06",
+        "to": "C09",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C06-C10",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C06",
+        "to": "C10",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C07-4044",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C07",
+        "to": "4044",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C07-C11",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C07",
+        "to": "C11",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C07-C12",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C07",
+        "to": "C12",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C08-C09",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C08",
+        "to": "C09",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C08-C13",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C08",
+        "to": "C13",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C09-C10",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C09",
+        "to": "C10",
+        "failure": {
+          "type": "idle"
+        }
+      }
+    },
+    {
+      "name": "C09-C15",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C09",
+        "to": "C15",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C10-C11",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C10",
+        "to": "C11",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C10-C15",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C10",
+        "to": "C15",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C10-C16",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C10",
+        "to": "C16",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C11-C12",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C11",
+        "to": "C12",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C11-C17",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C11",
+        "to": "C17",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C12-4046",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C12",
+        "to": "4046",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C13-4047",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C13",
+        "to": "4047",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C13-C14",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C13",
+        "to": "C14",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C14-4045",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C14",
+        "to": "4045",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C14-C15",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C14",
+        "to": "C15",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C15-C18",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C15",
+        "to": "C18",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C15-C19",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C15",
+        "to": "C19",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C16-C17",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C16",
+        "to": "C17",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C16-C20",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C16",
+        "to": "C20",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C16-C21",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C16",
+        "to": "C21",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C17-1043",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C17",
+        "to": "1043",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C17-C21",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C17",
+        "to": "C21",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C18-1045",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C18",
+        "to": "1045",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C18-C19",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C18",
+        "to": "C19",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C19-1041",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C19",
+        "to": "1041",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C19-C20",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C19",
+        "to": "C20",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C20-1042",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C20",
+        "to": "1042",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "C21-1044",
+      "machine": "Data Link",
+      "properties": {
+        "from": "C21",
+        "to": "1044",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "S01",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "S02",
+      "machine": "Data Centre"
+    },
+    {
+      "name": "S03",
+      "machine": "Control Centre"
+    },
+    {
+      "name": "S01-4061",
+      "machine": "Data Link",
+      "properties": {
+        "from": "S01",
+        "to": "4061",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "S01-S02",
+      "machine": "Data Link",
+      "properties": {
+        "from": "S01",
+        "to": "S02",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "S01-S03",
+      "machine": "Data Link",
+      "properties": {
+        "from": "S01",
+        "to": "S03",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "S02-4062",
+      "machine": "Data Link",
+      "properties": {
+        "from": "S02",
+        "to": "4062",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "S02-S03",
+      "machine": "Data Link",
+      "properties": {
+        "from": "S02",
+        "to": "S03",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "S03-4063",
+      "machine": "Data Link",
+      "properties": {
+        "from": "S03",
+        "to": "4063",
+        "failure": {
+          "type": "probabilistic",
+          "distribution": "exponential",
+          "parameter": 0.000001
+        }
+      }
+    },
+    {
+      "name": "National Control Centre",
+      "machine": "Control Centre"
+    },
+    {
+      "name": "National Control Centre-N11",
+      "machine": "Data Link",
+      "properties": {
+        "from": "National Control Centre",
+        "to": "N11",
+        "failure": {
+          "type": "idle"
+        }
+      }
+    },
+    {
+      "name": "National Control Centre-C10",
+      "machine": "Data Link",
+      "properties": {
+        "from": "National Control Centre",
+        "to": "C10",
+        "failure": {
+          "type": "idle"
+        }
+      }
+    },
+    {
+      "name": "National Control Centre-S03",
+      "machine": "Data Link",
+      "properties": {
+        "from": "National Control Centre",
+        "to": "S03",
+        "failure": {
+          "type": "idle"
+        }
+      }
+    }
+  ]
+}

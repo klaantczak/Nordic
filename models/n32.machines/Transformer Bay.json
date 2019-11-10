@@ -1,0 +1,13 @@
+{
+  "name": "Transformer Bay",
+  "type": "network-machine",
+  "properties": {
+    "line": {
+      "type": "String",
+      "required": true
+    }
+  },
+  "structure": {
+    "network": "Transformer Bay"
+  }
+}

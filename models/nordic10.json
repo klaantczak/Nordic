@@ -1,0 +1,569 @@
+{
+  "description": "Substations",
+  "machines": [
+    { "include": "n32.machines/Substation.json" },
+    { "include": "n32.machines/Link.json" },
+    { "include": "n32.machines/Generator.json" },
+    { "include": "n32.machines/Load.json" },
+    { "include": "n32.machines/Breaker.json" },
+    { "include": "n32.machines/Relay.json" },
+    { "include": "n32.machines/Current Transformer.json" },
+    { "include": "n32.machines/Battery.json" },
+    { "include": "n32.machines/Wiring.json" },
+    { "include": "n32.machines/Switch.json" },
+    { "include": "n32.machines/Workstation.json" },
+    { "include": "n32.machines/Server.json" },
+    { "include": "n32.machines/Router.json" },
+    { "include": "n32.machines/Firewall.json" },
+    { "include": "n32.machines/Vpn.json" },
+    { "include": "n32.machines/Data Centre.json" },
+    { "include": "n32.machines/Control Centre.json" },
+    { "include": "n32.machines/Data Link.json" },
+    { "include": "n32.machines/Generator Bay.json" },
+    { "include": "n32.machines/Line Bay.json" },
+    { "include": "n32.machines/Transformer Bay.json" },
+    { "include": "n32.machines/Load Bay.json" },
+    { "include": "n32.machines/Control Bay.json" },
+    { "name": "Substations",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substations"
+      }
+    },
+    { "name": "Substation G1",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation G1"
+      }
+    },
+    { "name": "Substation G2",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation G2"
+      }
+    },
+    { "name": "Substation D1",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation D1"
+      }
+    },
+    { "name": "Substation D2",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation D2"
+      }
+    },
+    { "name": "Substation D3",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation D3"
+      }
+    },
+    { "name": "Substation L1",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation L1"
+      }
+    },
+    { "name": "Substation L2",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation L2"
+      }
+    },
+    { "name": "Substation L3",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation L3"
+      }
+    },
+    { "name": "Substation L4",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation L4"
+      }
+    },
+    { "name": "Substation L5",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation L5"
+      }
+    }
+  ],
+  "networks": [
+    { "include": "n32.networks/Generator Bay.json" },
+    { "include": "n32.networks/Line Bay.json" },
+    { "include": "n32.networks/Transformer Bay.json" },
+    { "include": "n32.networks/Load Bay.json" },
+    { "include": "n32.networks/Control Bay.json" },
+    { "name": "baseline",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" }
+      ]
+    },
+    { "name": "Substations",
+      "machines": [
+        { "name": "G1",
+          "machine": "Substation G1"
+        },
+        { "name": "G2",
+          "machine": "Substation G2"
+        },
+        { "name": "D1",
+          "machine": "Substation D1"
+        },
+        { "name": "D2",
+          "machine": "Substation D2"
+        },
+        { "name": "D3",
+          "machine": "Substation D3"
+        },
+        { "name": "L1",
+          "machine": "Substation L1"
+        },
+        { "name": "L2",
+          "machine": "Substation L2"
+        },
+        { "name": "L3",
+          "machine": "Substation L3"
+        },
+        { "name": "L4",
+          "machine": "Substation L4"
+        },
+        { "name": "L5",
+          "machine": "Substation L5"
+        },
+        { "name": "G1-D1",
+          "machine": "Link",
+          "properties": {
+            "from": "G1",
+            "to": "D1",
+            "kV": "400",
+            "x": 8,
+            "max": 1200,
+            "overloaded": false,
+            "connected": true,
+            "failure": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1.5
+            },
+            "length": 100,
+            "recovery": {
+              "type": "deterministic",
+              "parameter": 0.002
+            }
+          }
+        },
+        { "name": "G1-D2",
+          "machine": "Link",
+          "properties": {
+            "from": "G1",
+            "to": "D2",
+            "kV": "400",
+            "x": 8,
+            "max": 1200,
+            "overloaded": false,
+            "connected": true,
+            "failure": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1.5
+            },
+            "length": 100,
+            "recovery": {
+              "type": "deterministic",
+              "parameter": 0.002
+            }
+          }
+        },
+        { "name": "G2-D2",
+          "machine": "Link",
+          "properties": {
+            "from": "G2",
+            "to": "D2",
+            "kV": "400",
+            "x": 8,
+            "max": 1200,
+            "overloaded": false,
+            "connected": true,
+            "failure": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1.5
+            },
+            "length": 100,
+            "recovery": {
+              "type": "deterministic",
+              "parameter": 0.002
+            }
+          }
+        },
+        { "name": "G2-D3",
+          "machine": "Link",
+          "properties": {
+            "from": "G2",
+            "to": "D3",
+            "kV": "400",
+            "x": 8,
+            "max": 1200,
+            "overloaded": false,
+            "connected": true,
+            "failure": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1.5
+            },
+            "length": 100,
+            "recovery": {
+              "type": "deterministic",
+              "parameter": 0.002
+            }
+          }
+        },
+        { "name": "D1-L1",
+          "machine": "Link",
+          "properties": {
+            "from": "D1",
+            "to": "L1",
+            "kV": "400",
+            "x": 1,
+            "max": 1200,
+            "overloaded": false,
+            "connected": true,
+            "length": 100,
+            "failure": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1.5
+            },
+            "recovery": {
+              "type": "deterministic",
+              "parameter": 0.002
+            }
+          }
+        },
+        { "name": "D1-L2",
+          "machine": "Link",
+          "properties": {
+            "from": "D1",
+            "to": "L2",
+            "kV": "400",
+            "x": 1,
+            "max": 1200,
+            "overloaded": false,
+            "connected": true,
+            "failure": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 0.05
+            },
+            "length": 100,
+            "recovery": {
+              "type": "deterministic",
+              "parameter": 0.002
+            }
+          }
+        },
+        { "name": "D2-L3",
+          "machine": "Link",
+          "properties": {
+            "from": "D2",
+            "to": "L3",
+            "kV": "400",
+            "x": 1,
+            "max": 1200,
+            "overloaded": false,
+            "connected": true,
+            "failure": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1.5
+            },
+            "length": 100,
+            "recovery": {
+              "type": "deterministic",
+              "parameter": 0.002
+            }
+          }
+        },
+        { "name": "D3-L4",
+          "machine": "Link",
+          "properties": {
+            "from": "D3",
+            "to": "L4",
+            "kV": "400",
+            "x": 1,
+            "max": 1200,
+            "overloaded": false,
+            "connected": true,
+            "length": 100,
+            "failure": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1.5
+            },
+            "recovery": {
+              "type": "deterministic",
+              "parameter": 0.002
+            }
+          }
+        },
+        { "name": "D3-L5",
+          "machine": "Link",
+          "properties": {
+            "from": "D3",
+            "to": "L5",
+            "kV": "400",
+            "x": 1,
+            "max": 1200,
+            "overloaded": false,
+            "connected": true,
+            "failure": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 0.05
+            },
+            "length": 100,
+            "recovery": {
+              "type": "deterministic",
+              "parameter": 0.002
+            }
+          }
+        }
+      ]
+    },
+    { "name": "Substation G1",
+      "machines": [
+        { "name": "Generator Bay",
+          "machine": "Generator Bay",
+          "properties": {
+            "capacity": 1000,
+            "connected": true
+          }
+        },
+        { "name": "Line Bay 1",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "G1-D1"
+          }
+        },
+        { "name": "Line Bay 2",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "G1-D2"
+          }
+        },
+        { "name": "Control Bay",
+          "machine": "Control Bay"
+        }
+      ]
+    },
+    { "name": "Substation G2",
+      "machines": [
+        { "name": "Generator Bay",
+          "machine": "Generator Bay",
+          "properties": {
+            "capacity": 1000,
+            "connected": true
+          }
+        },
+        { "name": "Line Bay 1",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "G2-D2"
+          }
+        },
+        { "name": "Line Bay 2",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "G2-D3"
+          }
+        },
+        { "name": "Control Bay",
+          "machine": "Control Bay"
+        }
+      ]
+    },
+    { "name": "Substation D1",
+      "machines": [
+        { "name": "Line Bay 1",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "G1-D1"
+          }
+        },
+        { "name": "Line Bay 2",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "D1-L1"
+          }
+        },
+        { "name": "Line Bay 3",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "D1-L2"
+          }
+        },
+        { "name": "Control Bay",
+          "machine": "Control Bay"
+        }
+      ]
+    },
+    { "name": "Substation D2",
+      "machines": [
+        { "name": "Line Bay 1",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "G1-D2"
+          }
+        },
+        { "name": "Line Bay 2",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "G2-D2"
+          }
+        },
+        { "name": "Line Bay 3",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "D2-L3"
+          }
+        },
+        { "name": "Control Bay",
+          "machine": "Control Bay"
+        }
+      ]
+    },
+    { "name": "Substation D3",
+      "comment": "Description of the substation does not have enough line bays (added #3, #4, #5) and has extra transformer bay (removed).",
+      "machines": [
+        { "name": "Line Bay 1",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "G2-D3"
+          }
+        },
+        { "name": "Line Bay 2",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "D3-L4"
+          }
+        },
+        { "name": "Line Bay 3",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "D3-L5"
+          }
+        },
+        { "name": "Control Bay",
+          "machine": "Control Bay"
+        }
+      ]
+    },
+    { "name": "Substation L1",
+      "machines": [
+        { "name": "Load Bay",
+          "machine": "Load Bay",
+          "properties": {
+            "power": 400,
+            "connected": true
+          }
+        },
+        { "name": "Line Bay 1",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "D1-L1"
+          }
+        },
+        { "name": "Control Bay",
+          "machine": "Control Bay"
+        }
+      ]
+    },
+    { "name": "Substation L2",
+      "machines": [
+        { "name": "Load Bay",
+          "machine": "Load Bay",
+          "properties": {
+            "power": 400,
+            "connected": true
+          }
+        },
+        { "name": "Line Bay 1",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "D1-L2"
+          }
+        },
+        { "name": "Control Bay",
+          "machine": "Control Bay"
+        }
+      ]
+    },
+    { "name": "Substation L3",
+      "machines": [
+        { "name": "Load Bay",
+          "machine": "Load Bay",
+          "properties": {
+            "power": 400,
+            "connected": true
+          }
+        },
+        { "name": "Line Bay 1",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "D2-L3"
+          }
+        },
+        { "name": "Control Bay",
+          "machine": "Control Bay"
+        }
+      ]
+    },
+    { "name": "Substation L4",
+      "machines": [
+        { "name": "Load Bay",
+          "machine": "Load Bay",
+          "properties": {
+            "power": 400,
+            "connected": true
+          }
+        },
+        { "name": "Line Bay 1",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "D3-L4"
+          }
+        },
+        { "name": "Control Bay",
+          "machine": "Control Bay"
+        }
+      ]
+    },
+    { "name": "Substation L5",
+      "machines": [
+        { "name": "Load Bay",
+          "machine": "Load Bay",
+          "properties": {
+            "power": 400,
+            "connected": true
+          }
+        },
+        { "name": "Line Bay 1",
+          "machine": "Line Bay",
+          "properties": {
+            "line": "D3-L5"
+          }
+        },
+        { "name": "Control Bay",
+          "machine": "Control Bay"
+        }
+      ]
+    }
+  ],
+  "diagrams": [],
+  "plugins": [],
+  "reports": []
+}

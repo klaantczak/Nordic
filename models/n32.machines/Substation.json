@@ -1,0 +1,37 @@
+{
+  "name": "Substation",
+  "type": "state-machine",
+  "properties": {
+    "load": {
+      "type": "Number",
+      "required": true
+    }
+  },
+  "structure": {
+    "states": [
+      "ok",
+      "fail"
+    ],
+    "initial": "ok",
+    "transitions": {
+      "ok": {
+        "fail": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 0.1
+          }
+        ]
+      },
+      "fail": {
+        "ok": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 20
+          }
+        ]
+      }
+    }
+  }
+}

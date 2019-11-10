@@ -1,0 +1,44 @@
+{
+  "name": "Data Link",
+  "type": "state-machine",
+  "properties": {
+    "from": {
+      "type": "String",
+      "required": true
+    },
+    "to": {
+      "type": "String",
+      "required": true
+    },
+    "failure": {
+      "type": "Activation",
+      "requied": true
+    }
+  },
+  "structure": {
+    "states": [
+      "ok",
+      "fail"
+    ],
+    "initial": "ok",
+    "transitions": {
+      "ok": {
+        "fail": [
+          {
+            "type": "property",
+            "property": "failure"
+          }
+        ]
+      },
+      "fail": {
+        "ok": [
+          {
+            "type": "deterministic",
+            "comment": "60 hours",
+            "parameter": 0.0069444444444
+          }
+        ]
+      }
+    }
+  }
+}

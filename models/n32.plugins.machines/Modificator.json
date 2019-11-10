@@ -1,0 +1,196 @@
+{
+  "name": "Modificator",
+  "type": "state-machine",
+  "properties": {
+    "frequency": {
+      "type": "Activation",
+      "requied": true
+    }
+  },
+  "structure": {
+    "states": [
+      "idle",
+      "attack",
+      "firewallRule1",
+      "firewallRule2",
+      "firewallRule3",
+      "firewallRule4",
+      "firewallRule5",
+      "success",
+      "modifyThreshold",
+      "detected"
+    ],
+    "initial": "idle",
+    "transitions": {
+      "idle": {
+        "attack": [
+          {
+            "type": "property",
+            "property": "frequency"
+          }
+        ]
+      },
+      "attack": {
+        "firewallRule1": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "firewallRule2": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "firewallRule3": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "firewallRule4": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "firewallRule5": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ]
+      },
+      "firewallRule1": {
+        "success": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ]
+      },
+      "firewallRule2": {
+        "success": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ]
+      },
+      "firewallRule3": {
+        "success": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ]
+      },
+      "firewallRule4": {
+        "success": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ]
+      },
+      "firewallRule5": {
+        "success": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ]
+      },
+      "success": {
+        "modifyThreshold": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ]
+      },
+      "modifyThreshold": {
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 2920,
+            "comment": "once in 3 hours, 365*24/3"
+          }
+        ]
+      },
+      "detected": {
+        "idle": [
+          {
+            "type": "deterministic",
+            "parameter": 0.00000003170979198376,
+            "comment": "one second, 1s/(365*24*60*60)"
+          }
+        ]
+      }
+    }
+  }
+}

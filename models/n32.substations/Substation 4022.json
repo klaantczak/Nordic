@@ -1,0 +1,45 @@
+{
+  "name": "Substation 4022",
+  "comment": "Description of the substation does not have enough line bays (added #5) and has extra transformer bay (removed).",
+  "machines": [
+    {
+      "name": "Line Bay 1",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "1022-4022"
+      }
+    },
+    {
+      "name": "Line Bay 2",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "4012-4022"
+      }
+    },
+    {
+      "name": "Line Bay 3",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "4022-4031-1"
+      }
+    },
+    {
+      "name": "Line Bay 4",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "4011-4022"
+      }
+    },
+    {
+      "name": "Line Bay 5",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "4022-4031-2"
+      }
+    },
+    {
+      "name": "Control Bay",
+      "machine": "Control Bay"
+    }
+  ]
+}

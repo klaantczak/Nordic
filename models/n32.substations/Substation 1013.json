@@ -1,0 +1,54 @@
+{
+  "name": "Substation 1013",
+  "comment": "Description of the substation does not have enough line bays (added #4) and has extra transformer bay (removed).",
+  "machines": [
+    {
+      "name": "Generator Bay",
+      "machine": "Generator Bay",
+      "properties": {
+        "capacity": 600,
+        "connected": true
+      }
+    },
+    {
+      "name": "Load Bay",
+      "machine": "Load Bay",
+      "properties": {
+        "power": 100,
+        "connected": true
+      }
+    },
+    {
+      "name": "Line Bay 1",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "1011-1013-1"
+      }
+    },
+    {
+      "name": "Line Bay 2",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "1011-1013-2"
+      }
+    },
+    {
+      "name": "Line Bay 3",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "1013-1014-1"
+      }
+    },
+    {
+      "name": "Line Bay 4",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "1013-1014-2"
+      }
+    },
+    {
+      "name": "Control Bay",
+      "machine": "Control Bay"
+    }
+  ]
+}

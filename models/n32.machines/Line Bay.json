@@ -1,0 +1,13 @@
+{
+  "name": "Line Bay",
+  "type": "network-machine",
+  "properties": {
+    "line": {
+      "type": "String",
+      "required": true
+    }
+  },
+  "structure": {
+    "network": "Line Bay"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Load Bay",
+  "machines": [
+    {
+      "name": "Load",
+      "machine": "Load"
+    },
+    {
+      "name": "Breaker",
+      "machine": "Breaker"
+    },
+    {
+      "name": "Primary Relay",
+      "machine": "Relay"
+    },
+    {
+      "name": "Backup Relay",
+      "machine": "Relay"
+    },
+    {
+      "name": "Battery",
+      "machine": "Battery"
+    },
+    {
+      "name": "Wiring",
+      "machine": "Wiring"
+    },
+    {
+      "name": "Switch",
+      "machine": "Switch"
+    }
+  ]
+}

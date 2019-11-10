@@ -1,0 +1,46 @@
+{
+  "name": "Substation 1042",
+  "machines": [
+    {
+      "name": "Line Bay 1",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "1044-1042-1"
+      }
+    },
+    {
+      "name": "Line Bay 2",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "1042-1045"
+      }
+    },
+    {
+      "name": "Line Bay 3",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "1044-1042-2"
+      }
+    },
+    {
+      "name": "Generator Bay",
+      "machine": "Generator Bay",
+      "properties": {
+        "capacity": 400,
+        "connected": true
+      }
+    },
+    {
+      "name": "Load Bay",
+      "machine": "Load Bay",
+      "properties": {
+        "power": 300,
+        "connected": true
+      }
+    },
+    {
+      "name": "Control Bay",
+      "machine": "Control Bay"
+    }
+  ]
+}

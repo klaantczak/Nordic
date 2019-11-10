@@ -1,0 +1,37 @@
+{
+  "name": "Generator Bay",
+  "machines": [
+    {
+      "name": "Generator",
+      "machine": "Generator"
+    },
+    {
+      "name": "Breaker",
+      "machine": "Breaker"
+    },
+    {
+      "name": "Primary Relay",
+      "machine": "Relay"
+    },
+    {
+      "name": "Backup Relay",
+      "machine": "Relay"
+    },
+    {
+      "name": "Current Transformer",
+      "machine": "Current Transformer"
+    },
+    {
+      "name": "Battery",
+      "machine": "Battery"
+    },
+    {
+      "name": "Wiring",
+      "machine": "Wiring"
+    },
+    {
+      "name": "Switch",
+      "machine": "Switch"
+    }
+  ]
+}

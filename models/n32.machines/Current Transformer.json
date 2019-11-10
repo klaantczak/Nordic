@@ -1,0 +1,31 @@
+{
+  "name": "Current Transformer",
+  "type": "state-machine",
+  "structure": {
+    "states": [
+      "ok",
+      "fail"
+    ],
+    "initial": "ok",
+    "transitions": {
+      "ok": {
+        "fail": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 0.1
+          }
+        ]
+      },
+      "fail": {
+        "ok": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 20
+          }
+        ]
+      }
+    }
+  }
+}

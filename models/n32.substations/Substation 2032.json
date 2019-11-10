@@ -1,0 +1,39 @@
+{
+  "name": "Substation 2032",
+  "machines": [
+    {
+      "name": "Generator Bay",
+      "machine": "Generator Bay",
+      "properties": {
+        "capacity": 850,
+        "connected": true
+      }
+    },
+    {
+      "name": "Load Bay",
+      "machine": "Load Bay",
+      "properties": {
+        "power": 200,
+        "connected": true
+      }
+    },
+    {
+      "name": "Line Bay 1",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "2032-2031-1"
+      }
+    },
+    {
+      "name": "Line Bay 2",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "2032-2031-2"
+      }
+    },
+    {
+      "name": "Control Bay",
+      "machine": "Control Bay"
+    }
+  ]
+}

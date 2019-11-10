@@ -1,0 +1,82 @@
+{
+  "name": "Link",
+  "type": "state-machine",
+  "comment": "The Link machine represents physical wiring between two substations. State represents physical availability of the wire, so ok means that two substations can be connected, fail represents environmental damage (ice, disaster, stolen cable, etc).",
+  "properties": {
+    "from": {
+      "type": "Lookup",
+      "required": true,
+      "properties": {
+        "list": "machines",
+        "filter": "name === 'Substation'",
+        "value": "name"
+      }
+    },
+    "to": {
+      "type": "Lookup",
+      "required": true,
+      "properties": {
+        "list": "machines",
+        "filter": "name === 'Substation'",
+        "value": "name"
+      }
+    },
+    "kV": {
+      "type": "String",
+      "required": true
+    },
+    "x": {
+      "type": "Number",
+      "required": true
+    },
+    "max": {
+      "type": "Number",
+      "required": true
+    },
+    "overloaded": {
+      "type": "Boolean",
+      "required": true
+    },
+    "connected": {
+      "type": "Boolean",
+      "required": true
+    },
+    "failure": {
+      "type": "Activation",
+      "requied": true
+    },
+    "recovery": {
+      "type": "Activation",
+      "requied": true
+    },
+    "length": {
+      "type": "Number",
+      "required": true
+    }
+  },
+  "structure": {
+    "states": [
+      "ok",
+      "fail"
+    ],
+    "initial": "ok",
+    "transitions": {
+      "ok": {
+        "fail": [
+          {
+            "type": "property",
+            "property": "failure"
+          }
+        ]
+      },
+      "fail": {
+        "ok": [
+          {
+            "type": "property",
+            "property": "recovery"
+          }
+        ]
+      }
+    }
+  }
+}

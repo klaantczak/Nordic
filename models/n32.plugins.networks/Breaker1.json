@@ -1,0 +1,9 @@
+{
+  "name": "Breaker",
+  "machines": [
+    {
+      "name": "Component1",
+      "machine": "Breaker Component"
+    }
+  ]
+}

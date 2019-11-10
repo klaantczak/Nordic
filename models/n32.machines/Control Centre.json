@@ -1,0 +1,10 @@
+{
+  "name": "Control Centre",
+  "type": "state-machine",
+  "structure": {
+    "states": [
+      "ok"
+    ],
+    "initial": "ok"
+  }
+}

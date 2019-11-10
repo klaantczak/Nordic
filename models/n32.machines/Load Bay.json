@@ -1,0 +1,17 @@
+{
+  "name": "Load Bay",
+  "type": "network-machine",
+  "properties": {
+    "power": {
+      "type": "Number",
+      "required": true
+    },
+    "connected": {
+      "type": "Boolean",
+      "required": true
+    }
+  },
+  "structure": {
+    "network": "Load Bay"
+  }
+}

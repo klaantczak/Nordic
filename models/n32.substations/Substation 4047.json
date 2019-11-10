@@ -1,0 +1,40 @@
+{
+  "name": "Substation 4047",
+  "comment": "The table A.4 contains two generators for this station.",
+  "machines": [
+    {
+      "name": "Load Bay",
+      "machine": "Load Bay",
+      "properties": {
+        "power": 100,
+        "connected": true
+      }
+    },
+    {
+      "name": "Line Bay 1",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "4043-4047"
+      }
+    },
+    {
+      "name": "Line Bay 2",
+      "machine": "Line Bay",
+      "properties": {
+        "line": "4046-4047"
+      }
+    },
+    {
+      "name": "Generator Bay",
+      "machine": "Generator Bay",
+      "properties": {
+        "capacity": 1200,
+        "connected": true
+      }
+    },
+    {
+      "name": "Control Bay",
+      "machine": "Control Bay"
+    }
+  ]
+}

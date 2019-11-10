@@ -1,0 +1,33 @@
+{
+  "name": "Control Bay",
+  "machines": [
+    {
+      "name": "Engineering Workstation",
+      "machine": "Workstation"
+    },
+    {
+      "name": "HMI",
+      "machine": "Workstation"
+    },
+    {
+      "name": "Server 1",
+      "machine": "Server"
+    },
+    {
+      "name": "Server 2",
+      "machine": "Server"
+    },
+    {
+      "name": "Router",
+      "machine": "Router"
+    },
+    {
+      "name": "Firewall",
+      "machine": "Firewall"
+    },
+    {
+      "name": "Switch",
+      "machine": "Switch"
+    }
+  ]
+}

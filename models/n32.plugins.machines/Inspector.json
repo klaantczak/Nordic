@@ -1,0 +1,36 @@
+{
+  "name": "Inspector",
+  "type": "state-machine",
+  "properties": {
+    "frequency": {
+      "type": "Activation",
+      "requied": true
+    }
+  },
+  "structure": {
+    "states": [
+      "idle",
+      "working"
+    ],
+    "initial": "idle",
+    "transitions": {
+      "idle": {
+        "working": [
+          {
+            "type": "property",
+            "property": "frequency"
+          }
+        ]
+      },
+      "working": {
+        "idle": [
+          {
+            "type": "deterministic",
+            "parameter": 0.00000003170979198376,
+            "comment": "one second, 1s/(365*24*60*60)"
+          }
+        ]
+      }
+    }
+  }
+}

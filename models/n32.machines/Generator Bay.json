@@ -1,0 +1,17 @@
+{
+  "name": "Generator Bay",
+  "type": "network-machine",
+  "properties": {
+    "capacity": {
+      "type": "Number",
+      "required": true
+    },
+    "connected": {
+      "type": "Boolean",
+      "required": true
+    }
+  },
+  "structure": {
+    "network": "Generator Bay"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Breaker Attacker",
+  "type": "state-machine",
+  "properties": {
+    "frequency": {
+      "type": "Activation",
+      "requied": true
+    },
+    "target": {
+      "type": "string",
+      "requied": true
+    }
+  },
+  "structure": {
+    "states": [
+      "attack"
+    ],
+    "initial": "attack",
+    "transitions": {
+      "attack": {
+        "attack": [
+          {
+            "type": "property",
+            "property": "frequency"
+          }
+        ]
+      }
+    }
+  }
+}

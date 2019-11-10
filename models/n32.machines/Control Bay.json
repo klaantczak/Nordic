@@ -1,0 +1,7 @@
+{
+  "name": "Control Bay",
+  "type": "network-machine",
+  "structure": {
+    "network": "Control Bay"
+  }
+}

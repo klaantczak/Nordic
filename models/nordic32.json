@@ -1,0 +1,545 @@
+{
+  "description": "Substations",
+  "machines": [
+    { "include": "n32.machines/Substation.json" },
+    { "include": "n32.machines/Link.json" },
+    { "include": "n32.machines/Generator.json" },
+    { "include": "n32.machines/Load.json" },
+    { "include": "n32.machines/Breaker.json" },
+    { "include": "n32.machines/Relay.json" },
+    { "include": "n32.machines/Current Transformer.json" },
+    { "include": "n32.machines/Battery.json" },
+    { "include": "n32.machines/Wiring.json" },
+    { "include": "n32.machines/Switch.json" },
+    { "include": "n32.machines/Workstation.json" },
+    { "include": "n32.machines/Server.json" },
+    { "include": "n32.machines/Router.json" },
+    { "include": "n32.machines/Firewall.json" },
+    { "include": "n32.machines/Data Centre.json" },
+    { "include": "n32.machines/Control Centre.json" },
+    { "include": "n32.machines/Data Link.json" },
+    { "include": "n32.machines/Generator Bay.json" },
+    { "include": "n32.machines/Line Bay.json" },
+    { "include": "n32.machines/Transformer Bay.json" },
+    { "include": "n32.machines/Load Bay.json" },
+    { "include": "n32.machines/Control Bay.json" },
+    { "include": "n32.plugins.machines/Attacker.json" },
+    { "include": "n32.plugins.machines/Modificator.json" },
+    { "include": "n32.plugins.machines/Inspector.json" },
+    { "name": "Substations",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substations"
+      }
+    },
+    { "name": "Substation 4071",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4071"
+      }
+    },
+    { "name": "Substation 4011",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4011"
+      }
+    },
+    { "name": "Substation 1011",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 1011"
+      }
+    },
+    { "name": "Substation 1013",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 1013"
+      }
+    },
+    { "name": "Substation 4012",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4012"
+      }
+    },
+    { "name": "Substation 1012",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 1012"
+      }
+    },
+    { "name": "Substation 1014",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 1014"
+      }
+    },
+    { "name": "Substation 4072",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4072"
+      }
+    },
+    { "name": "Substation 4021",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4021"
+      }
+    },
+    { "name": "Substation 1021",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 1021"
+      }
+    },
+    { "name": "Substation 1022",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 1022"
+      }
+    },
+    { "name": "Substation 4022",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4022"
+      }
+    },
+    { "name": "Substation 2032",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 2032"
+      }
+    },
+    { "name": "Substation 2031",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 2031"
+      }
+    },
+    { "name": "Substation 4031",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4031"
+      }
+    },
+    { "name": "Substation 4032",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4032"
+      }
+    },
+    { "name": "Substation 4042",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4042"
+      }
+    },
+    { "name": "Substation 4041",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4041"
+      }
+    },
+    { "name": "Substation 4044",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4044"
+      }
+    },
+    { "name": "Substation 4043",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4043"
+      }
+    },
+    { "name": "Substation 4046",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4046"
+      }
+    },
+    { "name": "Substation 4061",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4061"
+      }
+    },
+    { "name": "Substation 1043",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 1043"
+      }
+    },
+    { "name": "Substation 1044",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 1044"
+      }
+    },
+    { "name": "Substation 1042",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 1042"
+      }
+    },
+    { "name": "Substation 1041",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 1041"
+      }
+    },
+    { "name": "Substation 1045",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 1045"
+      }
+    },
+    { "name": "Substation 4062",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4062"
+      }
+    },
+    { "name": "Substation 4045",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4045"
+      }
+    },
+    { "name": "Substation 4047",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4047"
+      }
+    },
+    { "name": "Substation 4063",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4063"
+      }
+    },
+    { "name": "Substation 4051",
+      "type": "network-machine",
+      "structure": {
+        "network": "Substation 4051"
+      }
+    }
+  ],
+  "networks": [
+    { "name": "baseline",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" }
+      ]
+    },
+    { "name": "yearly-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1,
+              "comment": "every year, 1"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "monthly-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 12,
+              "comment": "every month, 12"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "weekly-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 52,
+              "comment": "every week, 52"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "daily-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 365,
+              "comment": "every day, 365"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "seven-weekly-attackers",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker1",
+          "machine": "Attacker",
+          "properties": { "frequency": { "type": "probabilistic", "distribution": "exponential", "parameter": 52, "comment": "every week, 52" } }
+        },
+        { "name": "Attacker2",
+          "machine": "Attacker",
+          "properties": { "frequency": { "type": "probabilistic", "distribution": "exponential", "parameter": 52, "comment": "every week, 52" } }
+        },
+        { "name": "Attacker3",
+          "machine": "Attacker",
+          "properties": { "frequency": { "type": "probabilistic", "distribution": "exponential", "parameter": 52, "comment": "every week, 52" } }
+        },
+        { "name": "Attacker4",
+          "machine": "Attacker",
+          "properties": { "frequency": { "type": "probabilistic", "distribution": "exponential", "parameter": 52, "comment": "every week, 52" } }
+        },
+        { "name": "Attacker5",
+          "machine": "Attacker",
+          "properties": { "frequency": { "type": "probabilistic", "distribution": "exponential", "parameter": 52, "comment": "every week, 52" } }
+        },
+        { "name": "Attacker6",
+          "machine": "Attacker",
+          "properties": { "frequency": { "type": "probabilistic", "distribution": "exponential", "parameter": 52, "comment": "every week, 52" } }
+        },
+        { "name": "Attacker7",
+          "machine": "Attacker",
+          "properties": { "frequency": { "type": "probabilistic", "distribution": "exponential", "parameter": 52, "comment": "every week, 52" } }
+        }
+      ]
+    },
+    { "name": "modificator.yearly-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Modificator",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1,
+              "comment": "every year, 1"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "modificator.monthly-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Modificator",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 12,
+              "comment": "every month, 12"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "modificator.weekly-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Modificator",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 52,
+              "comment": "every week, 52"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "modificator.daily-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Modificator",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 365,
+              "comment": "every day, 365"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "modificator.weekly-attacks.daily-inspections",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Modificator",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 52,
+              "comment": "every week, 52"
+            }
+          }
+        },
+        { "name": "Inspector",
+          "machine": "Inspector",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 365,
+              "comment": "every day, 365"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "modificator.weekly-attacks.weekly-inspections",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Modificator",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 52,
+              "comment": "every week, 52"
+            }
+          }
+        },
+        { "name": "Inspector",
+          "machine": "Inspector",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 52,
+              "comment": "every week, 52"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "modificator.weekly-attacks.monthly-inspections",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Modificator",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 52,
+              "comment": "every week, 52"
+            }
+          }
+        },
+        { "name": "Inspector",
+          "machine": "Inspector",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 12,
+              "comment": "every month, 12"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "modificator.weekly-attacks.yearly-inspections",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Modificator",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 52,
+              "comment": "every week, 52"
+            }
+          }
+        },
+        { "name": "Inspector",
+          "machine": "Inspector",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1,
+              "comment": "every year, 1"
+            }
+          }
+        }
+      ]
+    },
+    { "include": "n32.networks/Generator Bay.json" },
+    { "include": "n32.networks/Line Bay.json" },
+    { "include": "n32.networks/Transformer Bay.json" },
+    { "include": "n32.networks/Load Bay.json" },
+    { "include": "n32.networks/Control Bay.json" },
+    { "include": "n32.networks/Substations.json" },
+    { "include": "n32.substations/Substation 4071.json" },
+    { "include": "n32.substations/Substation 4072.json" },
+    { "include": "n32.substations/Substation 1021.json" },
+    { "include": "n32.substations/Substation 4012.json" },
+    { "include": "n32.substations/Substation 4011.json" },
+    { "include": "n32.substations/Substation 4046.json" },
+    { "include": "n32.substations/Substation 4061.json" },
+    { "include": "n32.substations/Substation 1011.json" },
+    { "include": "n32.substations/Substation 1013.json" },
+    { "include": "n32.substations/Substation 1012.json" },
+    { "include": "n32.substations/Substation 1014.json" },
+    { "include": "n32.substations/Substation 1022.json" },
+    { "include": "n32.substations/Substation 4022.json" },
+    { "include": "n32.substations/Substation 4021.json" },
+    { "include": "n32.substations/Substation 2032.json" },
+    { "include": "n32.substations/Substation 2031.json" },
+    { "include": "n32.substations/Substation 4031.json" },
+    { "include": "n32.substations/Substation 4032.json" },
+    { "include": "n32.substations/Substation 4041.json" },
+    { "include": "n32.substations/Substation 4042.json" },
+    { "include": "n32.substations/Substation 4043.json" },
+    { "include": "n32.substations/Substation 4044.json" },
+    { "include": "n32.substations/Substation 1043.json" },
+    { "include": "n32.substations/Substation 1044.json" },
+    { "include": "n32.substations/Substation 1042.json" },
+    { "include": "n32.substations/Substation 1041.json" },
+    { "include": "n32.substations/Substation 1045.json" },
+    { "include": "n32.substations/Substation 4045.json" },
+    { "include": "n32.substations/Substation 4047.json" },
+    { "include": "n32.substations/Substation 4051.json" },
+    { "include": "n32.substations/Substation 4062.json" },
+    { "include": "n32.substations/Substation 4063.json" }
+  ],
+  "diagrams": [],
+  "plugins": [],
+  "reports": []
+}

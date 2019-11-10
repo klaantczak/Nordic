@@ -1,0 +1,26 @@
+{
+  "name": "Breaker Inspector",
+  "type": "state-machine",
+  "properties": {
+    "frequency": {
+      "type": "Activation",
+      "requied": true
+    }
+  },
+  "structure": {
+    "states": [
+      "inspection"
+    ],
+    "initial": "inspection",
+    "transitions": {
+      "inspection": {
+        "inspection": [
+          {
+            "type": "property",
+            "property": "frequency"
+          }
+        ]
+      }
+    }
+  }
+}
