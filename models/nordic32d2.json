@@ -15,7 +15,6 @@
     { "include": "n32.machines/Server.json" },
     { "include": "n32.machines/Router.json" },
     { "include": "n32.machines/Firewall.json" },
-    { "include": "n32.machines/Vpn.json" },
     { "include": "n32.machines/Data Centre.json" },
     { "include": "n32.machines/Control Centre.json" },
     { "include": "n32.machines/Data Link.json" },

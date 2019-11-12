@@ -1,0 +1,175 @@
+{
+  "name": "Vpn Attacker",
+  "type": "state-machine",
+  "properties": {
+    "frequency": {
+      "type": "Activation",
+      "required": true
+    }
+  },
+  "structure": {
+    "states": [
+      "idle",
+      "attack",
+      "vpnBruteForce",
+      "vpnStolenCredentials",
+      "success",
+      "hmiHijack",
+      "success"
+      "disconnectLoad",
+      "disconnectLine",
+      "disconnectGenerator",
+      "detected"
+    ],
+    "initial": "idle",
+    "transitions": {
+      "idle": {
+        "attack": [
+          {
+            "type": "property",
+            "property": "frequency"
+          }
+        ]
+      },
+      "attack": {
+        "vpnBruteForce": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "vpnStolenCredentials": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ]
+      },
+      "vpnBruteForce": {
+        "success": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ]
+      },
+      "vpnStolenCredentials": {
+        "success": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 8736,
+            "comment": "once in an hour, 365*24"
+          }
+        ],
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ]
+      },
+        "success": {
+        "hmiHijack": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ]
+      },
+       "hmiHijack": {
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 2920,
+            "comment": "once in 3 hours, 365*24/3"
+          }
+        ]
+      },
+      "success": {
+        "disconnectLoad": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ],
+        "disconnectLine": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ],
+        "disconnectGenerator": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
+          }
+        ]
+      },
+      "disconnectLoad": {
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 2920,
+            "comment": "once in 3 hours, 365*24/3"
+          }
+        ]
+      },
+      "disconnectLine": {
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 2920,
+            "comment": "once in 3 hours, 365*24/3"
+          }
+        ]
+      },
+      "disconnectGenerator": {
+        "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 2920,
+            "comment": "once in 3 hours, 365*24/3"
+          }
+        ]
+      },
+      "detected": {
+        "idle": [
+          {
+            "type": "deterministic",
+            "parameter": 0.00000003170979198376,
+            "comment": "one second, 1s/(365*24*60*60)"
+          }
+        ]
+      }
+    }
+  }
+}
