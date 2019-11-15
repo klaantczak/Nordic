@@ -19,6 +19,7 @@ import (
 	"nordic32/plugins/loadflow"
 	"nordic32/plugins/modificator"
 	"nordic32/plugins/protection"
+	"nordic32/plugins/vpnattacker"
 	"strings"
 	"time"
 )
@@ -56,6 +57,7 @@ func getPlugins(logger hps.ILogger, rnd hps.IRnd) *plugins.PluginsContainer {
 		diversitystudy.NewPlugin(logger, rnd),
 		protection.NewPlugin(logger),
 		attacker.NewPlugin(logger, rnd),
+		vpnattacker.NewPlugin(logger, rnd),
 		modificator.NewPlugin(logger, rnd),
 		inspector.NewPlugin(logger, rnd),
 		control.NewPlugin(logger),

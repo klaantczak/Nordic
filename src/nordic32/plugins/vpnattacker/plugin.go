@@ -15,11 +15,11 @@ type Plugin struct {
 }
 
 func NewPlugin(logger hps.ILogger, rnd hps.IRnd) plugins.IPlugin {
-	return &Plugin{loggers.NewContextLogger(logger, "vpnattacker"), rnd}
+	return &Plugin{loggers.NewContextLogger(logger, "vpn-attacker"), rnd}
 }
 
 func (p *Plugin) Name() string {
-	return "vpnattacker"
+	return "vpn-attacker"
 }
 
 func (p *Plugin) Init(e hps.IEnvironment) error {
@@ -29,20 +29,31 @@ func (p *Plugin) Init(e hps.IEnvironment) error {
 		return nil
 	}
 
-	countVpnAttackers := 0
-	for _, m := range e.Machines() {
-		if m.Kind() == "Modificator" {
-			actions(m.(*sm.Machine), substations, p.rnd)
-			countModificators++
+	attackers := []*Attacker{}
+	for _, machine := range q.FindAllByKind(e.Machines(), "Vpn Attacker") {
+		m, ok := machine.(*sm.Machine)
+		if !ok {
+			p.logger.Printf("The attacker %s is not a statemachine", machine.Name())
+			return nil
 		}
+		attacker, ok := ToAttacker(m)
+		if !ok {
+			p.logger.Printf("The attacker %s is not a valid attacker", machine.Name())
+			return nil
+		}
+		attackers = append(attackers, attacker)
 	}
 
-	if countModificators == 0 {
-		p.logger.Print("no modificators")
-	} else {
-		p.logger.Printf("added handlers to %d modificators", countModificators)
+	if len(attackers) == 0 {
+		p.logger.Print("network has no attackers")
+		return nil
 	}
 
+	for _, attacker := range attackers {
+		actions(attacker, network, p.rnd)
+	}
+
+	p.logger.Printf("Initialised %d attacker(s)", len(attackers))
 	return nil
 }
 

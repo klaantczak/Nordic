@@ -15,7 +15,7 @@
       "vpnStolenCredentials",
       "success",
       "hmiHijack",
-      "success"
+      "hmiHijackSuccess",
       "disconnectLoad",
       "disconnectLine",
       "disconnectGenerator",
@@ -85,7 +85,7 @@
           }
         ]
       },
-        "success": {
+      "success": {
         "hmiHijack": [
           {
             "type": "probabilistic",
@@ -95,8 +95,16 @@
           }
         ]
       },
-       "hmiHijack": {
+      "hmiHijack": {
         "detected": [
+          {
+            "type": "probabilistic",
+            "distribution": "exponential",
+            "parameter": 2920,
+            "comment": "once in 3 hours, 365*24/3"
+          }
+        ],
+        "hmiHijackSuccess": [
           {
             "type": "probabilistic",
             "distribution": "exponential",
@@ -105,7 +113,7 @@
           }
         ]
       },
-      "success": {
+      "hmiHijackSuccess": {
         "disconnectLoad": [
           {
             "type": "probabilistic",

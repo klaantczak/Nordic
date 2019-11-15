@@ -25,6 +25,7 @@
     { "include": "n32.machines/Load Bay.json" },
     { "include": "n32.machines/Control Bay.json" },
     { "include": "n32.plugins.machines/Attacker.json" },
+    { "include": "n32.plugins.machines/Vpn Attacker.json" },
     { "include": "n32.plugins.machines/Modificator.json" },
     { "include": "n32.plugins.machines/Inspector.json" },
     { "name": "Substations",
@@ -230,6 +231,22 @@
     { "name": "baseline",
       "machines": [
         { "name": "Substations", "machine": "Substations" }
+      ]
+    },
+    { "name": "weekly-vpn-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Vpn Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 52,
+              "comment": "every week, 52"
+            }
+          }
+        }
       ]
     },
     { "name": "yearly-attacks",
