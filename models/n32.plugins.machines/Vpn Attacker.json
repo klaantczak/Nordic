@@ -36,16 +36,16 @@
           {
             "type": "probabilistic",
             "distribution": "exponential",
-            "parameter": 8736,
-            "comment": "once in an hour, 365*24"
+            "parameter": 873600,
+            "comment": "a hundred times in an hour, 365*24*100"
           }
         ],
         "vpnStolenCredentials": [
           {
             "type": "probabilistic",
             "distribution": "exponential",
-            "parameter": 8736,
-            "comment": "once in an hour, 365*24"
+            "parameter": 365,
+            "comment": "daily "
           }
         ]
       },
@@ -54,8 +54,8 @@
           {
             "type": "probabilistic",
             "distribution": "exponential",
-            "parameter": 8736,
-            "comment": "once in an hour, 365*24"
+            "parameter": 873600,
+            "comment": "a hundred times in an hour, 365*24"
           }
         ],
         "detected": [
@@ -72,16 +72,16 @@
           {
             "type": "probabilistic",
             "distribution": "exponential",
-            "parameter": 8736,
-            "comment": "once in an hour, 365*24"
+            "parameter": 52,
+            "comment": "once in a week "
           }
         ],
         "detected": [
           {
             "type": "probabilistic",
             "distribution": "exponential",
-            "parameter": 52560,
-            "comment": "once in 10 mins, 365*24*60/10"
+            "parameter": 730,
+            "comment": "once in 12 hours, 365*24/12"
           }
         ]
       },
@@ -100,16 +100,16 @@
           {
             "type": "probabilistic",
             "distribution": "exponential",
-            "parameter": 2920,
-            "comment": "once in 3 hours, 365*24/3"
+            "parameter": 1460,
+            "comment": "once in 6 hours, 365*24/6"
           }
         ],
         "hmiHijackSuccess": [
           {
             "type": "probabilistic",
             "distribution": "exponential",
-            "parameter": 2920,
-            "comment": "once in 3 hours, 365*24/3"
+            "parameter": 52560,
+            "comment": "once in 10 mins, 365*24*60/10"
           }
         ]
       },

@@ -249,6 +249,70 @@
         }
       ]
     },
+      { "name": "weekly1-vpn-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Vpn Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 52,
+              "comment": "every week, 52"
+            }
+          }
+        }
+      ]
+    },
+      { "name": "yearly1-vpn-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1,
+              "comment": "every year, 1"
+            }
+          }
+        }
+      ]
+    },
+    { "name": "monthly1-vpn-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 12,
+              "comment": "every month, 12"
+            }
+          }
+        }
+      ]
+    },
+     { "name": "daily1-vpn-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 365,
+              "comment": "every day, 365"
+            }
+          }
+        }
+      ]
+    },
     { "name": "yearly-attacks",
       "machines": [
         { "name": "Substations", "machine": "Substations" },
