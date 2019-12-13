@@ -233,7 +233,7 @@
         { "name": "Substations", "machine": "Substations" }
       ]
     },
-    { "name": "weekly-vpn-attacks",
+    { "name": "weekly2-vpn-attacks",
       "machines": [
         { "name": "Substations", "machine": "Substations" },
         { "name": "Attacker",
@@ -269,7 +269,23 @@
       "machines": [
         { "name": "Substations", "machine": "Substations" },
         { "name": "Attacker",
-          "machine": "Attacker",
+          "machine": "Vpn Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 1,
+              "comment": "every year, 1"
+            }
+          }
+        }
+      ]
+    },
+      { "name": "yearly2-vpn-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Vpn Attacker",
           "properties": {
             "frequency": {
               "type": "probabilistic",
@@ -285,7 +301,7 @@
       "machines": [
         { "name": "Substations", "machine": "Substations" },
         { "name": "Attacker",
-          "machine": "Attacker",
+          "machine": "Vpn Attacker",
           "properties": {
             "frequency": {
               "type": "probabilistic",
@@ -297,11 +313,75 @@
         }
       ]
     },
+     { "name": "monthly2-vpn-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Vpn Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 12,
+              "comment": "every month, 12"
+            }
+          }
+        }
+      ]
+    },
+      { "name": "hourly1-vpn-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Vpn Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 8736,
+              "comment": "once every hour, 365*12"
+            }
+          }
+        }
+      ]
+    },
+         { "name": "hourly2-vpn-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Vpn Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 8736,
+              "comment": "once every hour, 365*12"
+            }
+          }
+        }
+      ]
+    },
      { "name": "daily1-vpn-attacks",
       "machines": [
         { "name": "Substations", "machine": "Substations" },
         { "name": "Attacker",
-          "machine": "Attacker",
+          "machine": "Vpn Attacker",
+          "properties": {
+            "frequency": {
+              "type": "probabilistic",
+              "distribution": "exponential",
+              "parameter": 365,
+              "comment": "every day, 365"
+            }
+          }
+        }
+      ]
+    },
+     { "name": "daily2-vpn-attacks",
+      "machines": [
+        { "name": "Substations", "machine": "Substations" },
+        { "name": "Attacker",
+          "machine": "Vpn Attacker",
           "properties": {
             "frequency": {
               "type": "probabilistic",

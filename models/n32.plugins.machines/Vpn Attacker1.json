@@ -55,7 +55,7 @@
             "type": "probabilistic",
             "distribution": "exponential",
             "parameter": 873600,
-            "comment": "a hundred times in an hour, 365*24*100"
+            "comment": "a hundred times in an hour, 365*24*10"
           }
         ],
         "detected": [
@@ -73,7 +73,7 @@
             "type": "probabilistic",
             "distribution": "exponential",
             "parameter": 52,
-            "comment": "once in a week "
+            "comment": "once in a week, 52 "
           }
         ],
         "detected": [
@@ -181,3 +181,4 @@
     }
   }
 }
+

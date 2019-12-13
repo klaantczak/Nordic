@@ -14,12 +14,13 @@ go run load.cdf.go --jslog ../data/modificator.weekly-attacks.yearly-inspections
 go run load.cdf.go --jslog ../data/modificator.weekly-attacks.monthly-inspections.jslog > ../data/modificator.weekly-attacks.monthly-inspections.cdf.csv
 go run load.cdf.go --jslog ../data/modificator.weekly-attacks.weekly-inspections.jslog > ../data/modificator.weekly-attacks.weekly-inspections.cdf.csv
 go run load.cdf.go --jslog ../data/modificator.weekly-attacks.daily-inspections.jslog > ../data/modificator.weekly-attacks.daily-inspections.cdf.csv
-go run plot.go ../charts/attacks.png \
+go run plot.go ../charts/attacksall.png \
     baseline ../data/baseline.cdf.csv \
-    yearly ../data/yearly-vpn-attacks.cdf.csv \
-    monthly ../data/monthly-vpn-attacks.cdf.csv \
-    weekly ../data/weekly-vpn-attacks.cdf.csv \
-    daily ../data/daily-vpn-attacks.cdf.csv
+    yearly ../data/yearly1-vpn-attacks.cdf.csv \
+    monthly ../data/monthly1-vpn-attacks.cdf.csv \
+    weekly ../data/weekly1-vpn-attacks.cdf.csv \
+    daily ../data/daily1-vpn-attacks.cdf.csv \
+    hourly ../data/hourly1-vpn-attacks.cdf.csv
 go run plot.go ../charts/modificators.baseline.yearly.png \
     baseline ../data/baseline.cdf.csv \
     yearly ../data/modificator.yearly-attacks.cdf.csv
